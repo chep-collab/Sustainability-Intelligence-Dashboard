@@ -23,6 +23,8 @@ const PremiumNavbar = () => {
     { name: 'Home', href: '/' },
     { name: 'Features', href: '/features' },
     { name: 'About', href: '/about' },
+    { name: 'Team', href: '/team' },
+    { name: 'Implementation', href: '/implementation' },
     { name: 'Dashboard', href: '/dashboard' },
   ];
 

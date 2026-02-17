@@ -9,6 +9,8 @@ import FeaturesPage from "./pages/Features";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import TeamPage from "./pages/Team";
+import ImplementationPage from "./pages/Implementation";
 
 // YOUR EXISTING COMPONENTS
 import Dashboard from "./components/Dashboard";
@@ -26,6 +28,8 @@ export default function App() {
             <Route path="/features" element={<FeaturesPage />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/team" element={<TeamPage />} />
+            <Route path="/implementation" element={<ImplementationPage />} />
             <Route path="/contact" element={<Contact />} />
 
             {/* product */}

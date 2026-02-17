@@ -190,7 +190,9 @@ const AboutPage = () => {
         /* Mission Section */
         .mission-section {
           padding: var(--space-24) 0;
-          background: var(--white);
+          background: linear-gradient(135deg, #0d4f2a 0%, #1a5c3a 50%, #0d8b7f 100%);
+          position: relative;
+          overflow: hidden;
         }
 
         .mission-content {
@@ -203,14 +205,14 @@ const AboutPage = () => {
         .mission-text h2 {
           font-size: 2.5rem;
           font-weight: 800;
-          color: var(--gray-900);
+          color: var(--white);
           margin-bottom: var(--space-6);
         }
 
         .mission-text p {
           font-size: 1.125rem;
           line-height: 1.7;
-          color: var(--gray-600);
+          color: rgba(255, 255, 255, 0.9);
           margin-bottom: var(--space-4);
         }
 

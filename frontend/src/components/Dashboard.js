@@ -133,7 +133,7 @@ const Dashboard = forwardRef(({ lastUpdatedFromForm }, ref) => {
     },
     { 
       title: '💧 Water Usage', 
-      icon: '�', 
+      icon: '💧', 
       value: sensors.water ?? latest.waterUsage, 
       target: 25, 
       unit: 'm³', 
@@ -160,6 +160,84 @@ const Dashboard = forwardRef(({ lastUpdatedFromForm }, ref) => {
       trend: '-18%', 
       status: 'good',
       description: 'Carbon footprint from operations'
+    }
+  ];
+
+  // Social Indicators KPIs
+  const socialKpis = [
+    {
+      title: '👩‍💼 Gender Parity',
+      icon: '👩‍💼',
+      value: latest.genderParity ?? 42,
+      target: 50,
+      unit: '%',
+      trend: '+5%',
+      status: 'good',
+      description: 'Women in workforce and leadership'
+    },
+    {
+      title: '🎓 Youth Engagement',
+      icon: '🎓',
+      value: latest.youthTraining ?? 156,
+      target: 200,
+      unit: 'sessions',
+      trend: '+23%',
+      status: 'excellent',
+      description: 'Training sessions for local youth'
+    },
+    {
+      title: '🤝 Local Sourcing',
+      icon: '🤝',
+      value: latest.localSourcing ?? 850000,
+      target: 1000000,
+      unit: 'KES',
+      trend: '+12%',
+      status: 'good',
+      description: 'Annual spend with local suppliers'
+    },
+    {
+      title: '♿ Accessibility',
+      icon: '♿',
+      value: latest.accessibility ?? 85,
+      target: 100,
+      unit: '%',
+      trend: '+8%',
+      status: 'excellent',
+      description: 'Facility accessibility compliance'
+    }
+  ];
+
+  // Governance Indicators KPIs
+  const governanceKpis = [
+    {
+      title: '✅ Compliance Score',
+      icon: '✅',
+      value: latest.complianceScore ?? 92,
+      target: 100,
+      unit: '%',
+      trend: '+3%',
+      status: 'excellent',
+      description: 'Eco Tourism Kenya & ISO standards'
+    },
+    {
+      title: '📊 Transparency Index',
+      icon: '📊',
+      value: latest.transparencyIndex ?? 4,
+      target: 4,
+      unit: 'reports',
+      trend: 'stable',
+      status: 'excellent',
+      description: 'Annual sustainability reports published'
+    },
+    {
+      title: '🤝 Stakeholder Events',
+      icon: '🤝',
+      value: latest.stakeholderEvents ?? 12,
+      target: 12,
+      unit: 'events',
+      trend: '+20%',
+      status: 'excellent',
+      description: 'Community and partner engagement events'
     }
   ];
 
@@ -237,6 +315,122 @@ const Dashboard = forwardRef(({ lastUpdatedFromForm }, ref) => {
                   <h3>{kpi.title}</h3>
                   <div className="kpi-value">
                     {typeof kpi.value === 'number' ? kpi.value.toFixed(1) : '—'} 
+                    <span className="unit">{kpi.unit}</span>
+                  </div>
+                  
+                  <div className="progress-container">
+                    <div className="progress-info">
+                      <span>Progress to Target</span>
+                      <span>{Math.round(percentage)}%</span>
+                    </div>
+                    <div className="progress-bar-premium">
+                      <div 
+                        className="progress-fill" 
+                        style={{ 
+                          width: `${percentage}%`,
+                          backgroundColor: statusColor 
+                        }}
+                      ></div>
+                    </div>
+                    <div className="target-info">
+                      Target: {kpi.target}{kpi.unit}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Social Indicators Section */}
+      <div className="kpi-section-premium">
+        <div className="section-header">
+          <h2>👥 Social Impact Metrics</h2>
+          <div className="header-indicators">
+            <div className="live-indicator">
+              <div className="live-dot"></div>
+              <span>LIVE</span>
+            </div>
+          </div>
+        </div>
+        
+        <div className="kpi-grid-premium">
+          {socialKpis.map((kpi, idx) => {
+            const percentage = Math.min((kpi.value / kpi.target) * 100, 100);
+            const statusColor = getStatusColor(kpi.status);
+            
+            return (
+              <div key={idx} className="kpi-card-premium">
+                <div className="kpi-header">
+                  <div className="kpi-icon">{kpi.icon}</div>
+                  <div className="kpi-trend" style={{ color: statusColor }}>
+                    {kpi.trend}
+                  </div>
+                </div>
+                
+                <div className="kpi-content">
+                  <h3>{kpi.title}</h3>
+                  <div className="kpi-value">
+                    {typeof kpi.value === 'number' ? kpi.value.toLocaleString() : '—'} 
+                    <span className="unit">{kpi.unit}</span>
+                  </div>
+                  
+                  <div className="progress-container">
+                    <div className="progress-info">
+                      <span>Progress to Target</span>
+                      <span>{Math.round(percentage)}%</span>
+                    </div>
+                    <div className="progress-bar-premium">
+                      <div 
+                        className="progress-fill" 
+                        style={{ 
+                          width: `${percentage}%`,
+                          backgroundColor: statusColor 
+                        }}
+                      ></div>
+                    </div>
+                    <div className="target-info">
+                      Target: {kpi.target}{kpi.unit}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Governance Indicators Section */}
+      <div className="kpi-section-premium">
+        <div className="section-header">
+          <h2>🏛️ Governance & Compliance</h2>
+          <div className="header-indicators">
+            <div className="live-indicator">
+              <div className="live-dot"></div>
+              <span>LIVE</span>
+            </div>
+          </div>
+        </div>
+        
+        <div className="kpi-grid-premium">
+          {governanceKpis.map((kpi, idx) => {
+            const percentage = Math.min((kpi.value / kpi.target) * 100, 100);
+            const statusColor = getStatusColor(kpi.status);
+            
+            return (
+              <div key={idx} className="kpi-card-premium">
+                <div className="kpi-header">
+                  <div className="kpi-icon">{kpi.icon}</div>
+                  <div className="kpi-trend" style={{ color: statusColor }}>
+                    {kpi.trend}
+                  </div>
+                </div>
+                
+                <div className="kpi-content">
+                  <h3>{kpi.title}</h3>
+                  <div className="kpi-value">
+                    {typeof kpi.value === 'number' ? kpi.value.toLocaleString() : '—'} 
                     <span className="unit">{kpi.unit}</span>
                   </div>
                   
