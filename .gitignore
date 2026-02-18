@@ -60,3 +60,6 @@ temp/
 
 # Optional eslint cache
 .eslintcache
+
+.vercel
+.env*.local
