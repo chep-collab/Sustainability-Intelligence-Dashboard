@@ -1,28 +1,12 @@
 {
-  "build": {
-    "builder": "heroku/buildpacks"
+  "name": "sid-backend",
+  "version": "1.0.0",
+  "description": "Sustainability Intelligence Dashboard Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
   },
-  "env": {
-    "MONGO_URI": {
-      "description": "MongoDB connection string (MongoDB Atlas)",
-      "required": true
-    },
-    "NODE_ENV": {
-      "description": "Node environment (production/development)",
-      "value": "production"
-    },
-    "PORT": {
-      "description": "Server port",
-      "value": "5000"
-    },
-    "MQTT_BROKER": {
-      "description": "MQTT broker URL (optional, defaults to localhost:1883)",
-      "required": false
-    }
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    }
-  ]
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
