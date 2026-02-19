@@ -75,14 +75,14 @@ const PremiumLandingPage = () => {
       role: 'Chief Sustainability Officer',
       company: 'GreenTech Industries',
       quote: 'SID transformed how we track and report our ESG metrics. What used to take weeks now happens in real-time.',
-      avatar: '�‍💼'
+      avatar: '👨‍💼'
     },
     {
       name: 'Vicky Kimani',
       role: 'Operations Director',
       company: 'EcoManufacturing Corp',
       quote: 'The IoT integration eliminated manual data entry completely. Our team can focus on improvements instead of paperwork.',
-      avatar: '�‍�'
+      avatar: '👩‍💼'
     },
     {
       name: 'Sarah Mueni',
