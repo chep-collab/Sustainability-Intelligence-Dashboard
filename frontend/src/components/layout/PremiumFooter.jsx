@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaXTwitter, FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 import '../../styles/design-system.css';
 
 const PremiumFooter = () => {
@@ -24,11 +25,27 @@ const PremiumFooter = () => {
   };
 
   const socialLinks = [
-    { name: 'Twitter', icon: '🐦', href: 'https://twitter.com/geo_apnet' },
-    { name: 'Facebook', icon: '📘', href: 'https://facebook.com/geo-apnet' },
-    { name: 'LinkedIn', icon: '💼', href: 'https://linkedin.com/company/geo-apnet' },
-    { name: 'Instagram', icon: '📷', href: 'https://instagram.com/geo_apnet' }
-  ];
+  {
+    name: 'X',
+    icon: <FaXTwitter />,
+    href: 'https://twitter.com/geo_apnet'
+  },
+  {
+    name: 'Facebook',
+    icon: <FaFacebookF />,
+    href: 'https://facebook.com/geo-apnet'
+  },
+  {
+    name: 'LinkedIn',
+    icon: <FaLinkedinIn />,
+    href: 'https://linkedin.com/company/geo-apnet'
+  },
+  {
+    name: 'Instagram',
+    icon: <FaInstagram />,
+    href: 'https://instagram.com/geo_apnet'
+  }
+];
 
   return (
     <>
@@ -245,6 +262,9 @@ const PremiumFooter = () => {
 
         .social-icon {
           font-size: 1.25rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         /* Links Grid */
