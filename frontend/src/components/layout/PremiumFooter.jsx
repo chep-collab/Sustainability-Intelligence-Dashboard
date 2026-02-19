@@ -24,10 +24,10 @@ const PremiumFooter = () => {
   };
 
   const socialLinks = [
-    { name: 'Twitter', icon: '�', href: 'https://twitter.com' },
-    { name: 'Facebook', icon: '�', href: 'https://facebook.com' },
-    { name: 'LinkedIn', icon: '�', href: 'https://linkedin.com' },
-    { name: 'Instagram', icon: '�', href: 'https://instagram.com' }
+    { name: 'Twitter', icon: '🐦', href: 'https://twitter.com/geo_apnet' },
+    { name: 'Facebook', icon: '📘', href: 'https://facebook.com/geo-apnet' },
+    { name: 'LinkedIn', icon: '💼', href: 'https://linkedin.com/company/geo-apnet' },
+    { name: 'Instagram', icon: '📷', href: 'https://instagram.com/geo_apnet' }
   ];
 
   return (
