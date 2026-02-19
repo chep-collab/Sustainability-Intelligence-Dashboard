@@ -71,21 +71,21 @@ const PremiumLandingPage = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Chen',
+      name: 'John Omondi',
       role: 'Chief Sustainability Officer',
       company: 'GreenTech Industries',
       quote: 'SID transformed how we track and report our ESG metrics. What used to take weeks now happens in real-time.',
-      avatar: '👩‍💼'
+      avatar: '�‍💼'
     },
     {
-      name: 'Michael Rodriguez',
+      name: 'Vicky Kimani',
       role: 'Operations Director',
       company: 'EcoManufacturing Corp',
       quote: 'The IoT integration eliminated manual data entry completely. Our team can focus on improvements instead of paperwork.',
-      avatar: '👨‍🔧'
+      avatar: '�‍�'
     },
     {
-      name: 'Emma Thompson',
+      name: 'Sarah Mueni',
       role: 'Impact Investor',
       company: 'Climate Capital Partners',
       quote: 'The professional reports and dashboards make due diligence effortless. SID is the gold standard for sustainability monitoring.',
