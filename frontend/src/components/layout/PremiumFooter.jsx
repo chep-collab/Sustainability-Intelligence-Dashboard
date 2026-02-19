@@ -8,34 +8,26 @@ const PremiumFooter = () => {
     product: [
       { name: 'Dashboard', href: '/dashboard' },
       { name: 'Features', href: '/features' },
-      { name: 'API Documentation', href: '#docs', external: true },
-      { name: 'Integrations', href: '#integrations', external: true }
+      { name: 'API Documentation', href: '#docs', external: true }
     ],
     company: [
       { name: 'About Us', href: '/about' },
-      { name: 'Careers', href: '#careers', external: true },
-      { name: 'Blog', href: '#blog', external: true },
-      { name: 'Press Kit', href: '#press', external: true }
+      { name: 'Contact', href: '/contact' }
     ],
     support: [
-      { name: 'Help Center', href: '#help', external: true },
-      { name: 'Contact', href: '/contact' },
-      { name: 'Status', href: '#status', external: true },
-      { name: 'Community', href: '#community', external: true }
+      { name: 'Help Center', href: 'mailto:info@geo-apnet.co.ke', external: true }
     ],
     legal: [
-      { name: 'Privacy Policy', href: '#privacy', external: true },
-      { name: 'Terms of Service', href: '#terms', external: true },
-      { name: 'Security', href: '#security', external: true },
-      { name: 'Compliance', href: '#compliance', external: true }
+      { name: 'Privacy Policy', href: '/privacy' },
+      { name: 'Terms of Service', href: '/terms' }
     ]
   };
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: '💼', href: 'https://linkedin.com/company/sid-climate' },
-    { name: 'Twitter', icon: '🐦', href: 'https://twitter.com/sid_climate' },
-    { name: 'GitHub', icon: '💻', href: 'https://github.com/sid-climate' },
-    { name: 'YouTube', icon: '📺', href: 'https://youtube.com/@sid-climate' }
+    { name: 'Twitter', icon: '�', href: 'https://twitter.com' },
+    { name: 'Facebook', icon: '�', href: 'https://facebook.com' },
+    { name: 'LinkedIn', icon: '�', href: 'https://linkedin.com' },
+    { name: 'Instagram', icon: '�', href: 'https://instagram.com' }
   ];
 
   return (
