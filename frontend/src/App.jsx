@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/design-system.css';
-
-import PremiumNavbar from "./components/layout/PremiumNavbar";
-import PremiumFooter from "./components/layout/PremiumFooter";
-
-import PremiumLandingPage from "./components/PremiumLandingPage";
-import FeaturesPage from "./pages/Features";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import PremiumNavbar from './components/layout/PremiumNavbar';
+import PremiumFooter from './components/layout/PremiumFooter';
+import PremiumLandingPage from './components/PremiumLandingPage';
+import AboutPage from './pages/About';
+import TeamPage from './pages/Team';
+import ImplementationPage from './pages/Implementation';
+import Dashboard from './components/Dashboard';
+import PrivacyPage from './pages/Privacy';
+import TermsPage from './pages/Terms';
 import TeamPage from "./pages/Team";
 import ImplementationPage from "./pages/Implementation";
 
@@ -30,6 +30,8 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/implementation" element={<ImplementationPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
             <Route path="/contact" element={<Contact />} />
 
             {/* product */}
