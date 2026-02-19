@@ -24,14 +24,14 @@ export default function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<PremiumLandingPage />} />
-            <Route path="/features" element={<FeaturesPage />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/features" element={<PremiumLandingPage />} />
+            <Route path="/home" element={<PremiumLandingPage />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/implementation" element={<ImplementationPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<PremiumLandingPage />} />
 
             {/* product */}
             <Route path="/dashboard" element={<Dashboard />} />
