@@ -11,6 +11,7 @@ import ImplementationPage from "./pages/Implementation";
 import Dashboard from "./components/Dashboard";
 import PrivacyPage from "./pages/Privacy";
 import TermsPage from "./pages/Terms";
+import FeaturesPage from "./pages/Features";
 
 // YOUR EXISTING COMPONENTS
 import SensorPanel from "./components/SensorPanel";
@@ -24,6 +25,7 @@ export default function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<PremiumLandingPage />} />
+            <Route path="/features" element={<FeaturesPage />} />
             <Route path="/home" element={<PremiumLandingPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/team" element={<TeamPage />} />
