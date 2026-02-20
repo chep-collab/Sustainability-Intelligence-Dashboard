@@ -108,7 +108,7 @@ const PremiumLandingPage = () => {
                 🌍 Sustainability Intelligence Dashboard
               </h1>
               <h2 className="hero-subtitle">
-                Empowering Kenya's Eco-Conference Facilities with Smart ESG Intelligence
+                Smart ESG Intelligence for Kenya's Eco-Conference Facilities
               </h2>
               <p className="hero-description">
                 Transform your conference facility's sustainability performance with cutting-edge IoT sensors, 

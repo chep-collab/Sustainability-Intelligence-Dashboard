@@ -13,6 +13,7 @@ const PremiumFooter = () => {
     ],
     company: [
       { name: 'About Us', href: '/about' },
+      { name: 'Home', href: '/' },
       { name: 'Contact', href: '/contact' }
     ],
     support: [
@@ -340,7 +341,7 @@ const PremiumFooter = () => {
         /* Bottom Footer */
         .footer-bottom {
           padding: var(--space-6) 0;
-          background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+          background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
         }
 
         .footer-bottom-content {
@@ -352,7 +353,7 @@ const PremiumFooter = () => {
         }
 
         .copyright p {
-          color: var(--gray-500);
+          color: var(--white);
           font-size: 0.875rem;
           margin: 0;
         }
@@ -366,12 +367,12 @@ const PremiumFooter = () => {
         .badge {
           display: inline-block;
           padding: var(--space-2) var(--space-3);
-          background: var(--gray-800);
-          color: var(--gray-400);
+          background: rgba(255, 255, 255, 0.2);
+          color: var(--white);
           border-radius: var(--radius-full);
           font-size: 0.75rem;
           font-weight: 500;
-          border: 1px solid var(--gray-700);
+          border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         /* Responsive Design */
