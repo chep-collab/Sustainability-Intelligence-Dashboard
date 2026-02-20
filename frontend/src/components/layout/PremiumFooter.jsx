@@ -168,7 +168,7 @@ const PremiumFooter = () => {
 
       <style jsx>{`
         .premium-footer {
-          background: var(--gray-900);
+          background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
           color: var(--white);
           margin-top: auto;
         }
@@ -309,7 +309,7 @@ const PremiumFooter = () => {
         /* Impact Stats Bar */
         .impact-stats-bar {
           padding: var(--space-8) 0;
-          background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+          background: linear-gradient(135deg, #059669 0%, #10b981 100%);
         }
 
         .stats-grid {
@@ -340,7 +340,7 @@ const PremiumFooter = () => {
         /* Bottom Footer */
         .footer-bottom {
           padding: var(--space-6) 0;
-          background: var(--gray-950);
+          background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
         }
 
         .footer-bottom-content {
