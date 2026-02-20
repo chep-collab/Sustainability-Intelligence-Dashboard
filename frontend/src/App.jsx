@@ -24,7 +24,6 @@ export default function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<PremiumLandingPage />} />
-            <Route path="/features" element={<PremiumLandingPage />} />
             <Route path="/home" element={<PremiumLandingPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/team" element={<TeamPage />} />

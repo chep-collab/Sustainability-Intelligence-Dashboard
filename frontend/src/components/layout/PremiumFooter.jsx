@@ -8,7 +8,6 @@ const PremiumFooter = () => {
   const footerLinks = {
     product: [
       { name: 'Dashboard', href: '/dashboard' },
-      { name: 'Features', href: '/features' },
       { name: 'API Documentation', href: '#docs', external: true }
     ],
     company: [
