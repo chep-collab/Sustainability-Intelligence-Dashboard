@@ -108,7 +108,7 @@ const PremiumLandingPage = () => {
                 🌍 Sustainability Intelligence Dashboard
               </h1>
               <h2 className="hero-subtitle">
-                Empowering Kenya's Eco-Conference Facilities with Real-Time Environmental Intelligence
+                Empowering Kenya's Eco-Conference Facilities with Smart ESG Intelligence
               </h2>
               <p className="hero-description">
                 Transform your conference facility's sustainability performance with cutting-edge IoT sensors, 
@@ -117,7 +117,7 @@ const PremiumLandingPage = () => {
               </p>
               <div className="hero-actions">
                 <Link to="/dashboard" className="btn-premium btn-premium-primary btn-premium-large">
-                  🚀 View Live Dashboard
+                  🚀 View Real-Time Data in Action
                 </Link>
                 <Link to="/features" className="btn-premium btn-premium-secondary btn-premium-large">
                   � Explore Features
@@ -138,14 +138,14 @@ const PremiumLandingPage = () => {
                 <div className="preview-content">
                   <div className="preview-metrics">
                     <div className="preview-metric">
-                      <div className="metric-icon">⚡</div>
-                      <div className="metric-value">65%</div>
-                      <div className="metric-label">Renewable</div>
+                      <div className="metric-icon">📊</div>
+                      <div className="metric-value">Live</div>
+                      <div className="metric-label">ESG Data</div>
                     </div>
                     <div className="preview-metric">
-                      <div className="metric-icon">💧</div>
-                      <div className="metric-value">22m³</div>
-                      <div className="metric-label">Water</div>
+                      <div className="metric-icon">🎯</div>
+                      <div className="metric-value">Smart</div>
+                      <div className="metric-label">Monitoring</div>
                     </div>
                     <div className="preview-metric">
                       <div className="metric-icon">♻️</div>
@@ -338,7 +338,8 @@ const PremiumLandingPage = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: var(--gradient-hero);
+          background: linear-gradient(135deg, #10b981 0%, #059669 50%, #0891b2 100%);
+          z-index: -2;
         }
 
         .hero-gradient {
@@ -463,7 +464,7 @@ const PremiumLandingPage = () => {
         /* Features Section */
         .features-section {
           padding: var(--space-24) 0;
-          background: var(--white);
+          background: linear-gradient(135deg, #f8fafb 0%, #e0f2fe 100%);
         }
 
         .section-header {
@@ -533,7 +534,7 @@ const PremiumLandingPage = () => {
         /* Impact Section */
         .impact-section {
           padding: var(--space-24) 0;
-          background: var(--gradient-primary);
+          background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
           color: var(--white);
         }
 
@@ -686,7 +687,7 @@ const PremiumLandingPage = () => {
         /* CTA Section */
         .cta-section {
           padding: var(--space-24) 0;
-          background: var(--gradient-primary);
+          background: linear-gradient(135deg, #059669 0%, #10b981 100%);
           color: var(--white);
           text-align: center;
         }
